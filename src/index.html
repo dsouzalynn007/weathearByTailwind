@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherTailwind</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Dancing+Script:wght@400;500&family=Exo+2&family=Fjalla+One&family=Fredericka+the+Great&family=Kdam+Thmor+Pro&family=Lato:wght@300&family=Old+Standard+TT&family=Oswald:wght@200;400&family=Poppins&family=Saira+Condensed:wght@300&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="input.css">
+<link href="../dist/output.css" rel="stylesheet">
+
+</head>
+<body class="bg-[#eee] font-['Fjalla_One']">
+    
+<section class="m-[10px] h-[95vh] w-[95%] overflow-y-hidden">
+    <article class="h-full flex">
+        <aside class="border border-r-slate-500">
+            <input class="bg-transparent border border-black p-[10px] rounded-md m-[10px]"
+            type="text" placeholder="search weather">
+        </aside>
+        <aside class="m-0 flex ml-[100px] justify-center relative">
+            <main class="displayAll mt-[10px] flex flex-col h-[80vh] w-[800px] place-content-evenly items-center
+            border-[20px] border-black bg-[url('../images/bg-img.webp')] bg-[length:25%]">
+                <h1 class="cityDisplay text-[40px] text-blue-900 bg-white"></h1>
+                <h1 class="tempDisplay text-[60px] text-red-800 bg-white"></h1>
+                <img class="iconDisplay bg-[#eee] h-[100px] rounded-full" src="" alt="">
+                <h1 class="appearDisplay text-[30px] text-blue-900 bg-white"></h1>
+            </main>
+            <figure class="absolute right-[-80px] top-[100px]">
+                <img class="h-full" src="../images/pngwing.com.png" alt="">
+            </figure>
+        </aside>
+    </article>
+</section>
+
+    <script src="app.js"></script>
+</body>
+</html>
